@@ -14,6 +14,7 @@ import javax.swing.JTextArea;
  *
  * @author Put your name here
  */
+@SuppressWarnings("serial")
 public final class NNCalcViewLab extends JFrame implements ActionListener {
 
     /**
@@ -35,10 +36,29 @@ public final class NNCalcViewLab extends JFrame implements ActionListener {
     /**
      * Digit entry buttons.
      */
-    private final JButton[] bDigits = { new JButton("1"), new JButton("2"),
-            new JButton("3"), new JButton("4"), new JButton("5"),
-            new JButton("6"), new JButton("7"), new JButton("8"),
-            new JButton("9"), new JButton("0") };
+    private final JButton[] bDigits = new JButton[DIGIT_BUTTONS];/*
+                                                                  * { new
+                                                                  * JButton("1")
+                                                                  * , new
+                                                                  * JButton("2")
+                                                                  * , new
+                                                                  * JButton("3")
+                                                                  * , new
+                                                                  * JButton("4")
+                                                                  * , new
+                                                                  * JButton("5")
+                                                                  * , new
+                                                                  * JButton("6")
+                                                                  * , new
+                                                                  * JButton("7")
+                                                                  * , new
+                                                                  * JButton("8")
+                                                                  * , new
+                                                                  * JButton("9")
+                                                                  * , new
+                                                                  * JButton("0")
+                                                                  * };
+                                                                  */
 
     /**
      * Useful constants.
